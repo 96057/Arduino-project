@@ -8,7 +8,7 @@ This program can be stopped by letting go of the button the breadboard.
 
 Change History:
      2014-04-30 written by George
-     2023-11-23 modified by R. Shaw
+     2023-11-23 modified by R.S
      2024-12-6 modified by A.M
 
 Initial Project Url:
