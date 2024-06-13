@@ -8,15 +8,21 @@ This program can be stopped by letting go of the button the breadboard.
 
 Change History:
      2014-04-30 written by George
-     2023-11-23 modified by R.S
-     2024-12-6 modified by A.M
+     2023-11-23 modified by R. Shaw
+     2024-12-6 modified by A. Moshaveri
+
+Github Account:
+https://github.com/96057
+
+Github page for the project:
+https://github.com/96057/Arduino-project
 
 Initial Project Url:
 http://georgehk.blogspot.ca/2014/04/traffic-light-arduino-uno-r3.html
 */
 
 // Initialize variables
-int ledDelay = 300; // Delay of 300ms
+int ledDelay = 1000; // Delay of 300ms
 int pin8Pin = 8; // Use pin 8 for the 1st LED
 int pin9Pin = 9; // Use pin 9 for the 2nd LED
 int pin10Pin = 10; // Use pin 10 for the 3rd LED
@@ -38,42 +44,49 @@ void loop() {  // loop executes continuously
   delay(ledDelay); // delay
   
   digitalWrite(pin9Pin, HIGH); // turn on the 2nd LED
-  digitalWrite(pin8Pin, LOW); // turn off the 1st LED
+  digitalWrite(pin8Pin, HIGH); // turn off the 1st LED
   delay(ledDelay); // delay
 
   digitalWrite(pin10Pin, HIGH); // turn on the 3rd LED
-  digitalWrite(pin9Pin, LOW); // turn off the 2nd LED
+  digitalWrite(pin8Pin, LOW); // turn off the 2nd LED
   delay(ledDelay); // delay
   
   digitalWrite(pin11Pin, HIGH); // turn on the 4th LED
-  digitalWrite(pin10Pin, LOW); // turn off the 3rd LED
+  digitalWrite(pin9Pin, LOW); // turn off the 3rd LED
   delay(ledDelay); // delay
 
   digitalWrite(pin12Pin, HIGH); // turn on the 5th LED
-  digitalWrite(pin11Pin, LOW); // turn off the 4th LED
+  digitalWrite(pin10Pin, LOW); // turn off the 4th LED
   delay(ledDelay); // delay
 
   digitalWrite(pin13Pin, HIGH); // turn on the 6th LED
-  digitalWrite(pin12Pin, LOW); // turn off the 5th LED
+  digitalWrite(pin11Pin, LOW); // turn off the 5th LED
   delay(ledDelay); // delay
+
+  digitalWrite(pin12Pin, LOW); // turn off the 5th LED
+  delay(ledDelay);
+
 // now we go the other way around(from right to left)
   digitalWrite(pin12Pin, HIGH); // turn on 5th LED
-  digitalWrite(pin13Pin, LOW); // turn off the 6th LED
   delay(ledDelay); // delay
 
   digitalWrite(pin11Pin, HIGH); // turn on the 4th LED
-  digitalWrite(pin12Pin, LOW); // turn off the 5th LED
+  digitalWrite(pin13Pin, LOW); // turn off the 5th LED
   delay(ledDelay); // delay
 
   digitalWrite(pin10Pin, HIGH); // turn the 3rd LED
-  digitalWrite(pin11Pin, LOW); // turn off the 4th LED
+  digitalWrite(pin12Pin, LOW); // turn off the 4th LED
   delay(ledDelay); // delay
 
   digitalWrite(pin9Pin, HIGH); // turn on the 2nd LED
-  digitalWrite(pin10Pin, LOW); // turn off the 3rd LED
+  digitalWrite(pin11Pin, LOW); // turn off the 3rd LED
   delay(ledDelay); // delay
 
   digitalWrite(pin8Pin, HIGH); // turn on the 1st LED
+  digitalWrite(pin9Pin, HIGH); // turn on the 2nd LED
+  digitalWrite(pin10Pin, LOW); // turn off the 2nd LED
+  delay(ledDelay);
+  
   digitalWrite(pin9Pin, LOW); // turn off the 2nd LED
   delay(ledDelay); // delay
 
