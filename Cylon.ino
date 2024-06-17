@@ -22,7 +22,7 @@ http://georgehk.blogspot.ca/2014/04/traffic-light-arduino-uno-r3.html
 */
 
 // Initialize variables
-int ledDelay = 1000; // Delay of 300ms
+int ledDelay = 200; // Delay of 300ms
 int pin8Pin = 8; // Use pin 8 for the 1st LED
 int pin9Pin = 9; // Use pin 9 for the 2nd LED
 int pin10Pin = 10; // Use pin 10 for the 3rd LED
